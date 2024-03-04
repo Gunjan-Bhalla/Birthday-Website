@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moments</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="full-img" id="fullImgBox">
+            <img src="Images/moments1.webp" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div> 
+        <div class="img-gallery">
+            <img src = "Images/moments1.webp" onclick="openFullImg(this.src)">
+            <img src = "Images/moments2.webp" onclick="openFullImg(this.src)">
+            <img src = "Images/moments3.webp" onclick="openFullImg(this.src)">
+            <img src = "Images/moments4.webp" onclick="openFullImg(this.src)">
+            <img src = "Images/moments5.webp" onclick="openFullImg(this.src)">
+            <img src = "Images/moments6.webp" onclick="openFullImg(this.src)">
+            <img src = "Images/moments7.webp" onclick="openFullImg(this.src)">
+            <img src = "Images/moments8.webp" onclick="openFullImg(this.src)">
+            <img src = "Images/moments10.jpg" onclick="openFullImg(this.src)">
+            <img src = "Images/moments11.jpg" onclick="openFullImg(this.src)">
+            <img src = "Images/moments12.jpg" onclick="openFullImg(this.src)">
+            <img src = "Images/moments13.jpg" onclick="openFullImg(this.src)">
+
+        </div>
+        <script>
+            var fullImgBox = document.getElementById("fullImgBox");
+            var fullImg = document.getElementById("fullImg");
+
+            function openFullImg(pic){
+                fullImgBox.style.display = "flex";
+                fullImg.src = pic;
+            }
+
+            function closeFullImg(){
+                fullImgBox.style.display = "none";
+            }
+        </script>
+    </body>
+</html>

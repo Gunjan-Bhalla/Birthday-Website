@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Happiest Birthdayyy!!</title>
+        <link rel="stylesheet" href="style.css">
+         
+    </head>
+    <body>
+        <div id="main">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Images/log.png" alt="Birthday-Logo">
+                </div>
+                <nav>
+                    <ul>  
+                        <a href="home.html" target="_blank"><li>Home</li></a>
+                        <a href="index.html" target="_blank"><li>Cake</li></a>
+                        <a href="moments.html" target="_blank"><li>Moments</li></a>
+                        <a href="note.html" target="_blank"><li>Note</li></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="circle-box">
+                <svg height = "402" width="402">
+                    <circle r = "200" cx="200" cy="200" stroke-width="1px" stroke="gray" fill="none"></circle>
+                </svg>
+                <svg height = "402" width="402">
+                    <circle r = "200" cx="200" cy="200" stroke-width="1px" stroke="#fff" fill="none" id="svgCircle"></circle>
+                </svg>
+                <div>
+                    <span id="step1"></span>
+                    <span id="step2"></span>
+                    <span id="step3"></span>
+                    <span id="step4"></span>
+                    <span id="step5"></span>
+                </div>
+                <div class="user-box" id="userBox">
+                    <div class="user">
+                        <img src="Images/d1.webp" alt="Person images">
+                        <h1>Happy Birthday</h1>
+                        <p>Thank You, for always being my rainbow after the storm.</p>
+                        <div class="social-links">
+
+
+                            <img src="Images/Heart.png" alt = " ">
+                            <img src="Images/emoji.png" alt = " ">
+                            <img src="Images/Heart.png" alt = " ">
+                            <img src="Images/emoji.png" alt = " ">
+
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <img src="Images/d2.jpg" alt="Person images">
+                        <h1>Doremonn</h1>
+                        <p>A soul like yours is impossible to find again, be happyyy.</p>
+                        <div class="social-links">
+                            <img src="Images/Heart.png" alt = " ">
+                            <img src="Images/emoji.png" alt = " ">
+                            <img src="Images/Heart.png" alt = " ">
+                            <img src="Images/emoji.png" alt = " ">
+
+                        </div>
+                    </div>
+
+                    
+                    <div class="user">
+                        <img src="Images/d3.jpg" alt="Person images">
+                        <h1>Bhott Saraa Pyaar</h1>
+                        <p>I know I am not perfect but,<br>
+                            तुम जो आए ज़िन्दगी में बात बन गई|</p>
+                        <div class="social-links">
+                            <img src="Images/Heart.png" alt = " ">
+                            <img src="Images/emoji.png" alt = " ">
+                            <img src="Images/Heart.png" alt = " ">
+                            <img src="Images/emoji.png" alt = " ">
+
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <img src="Images/d4.jpg" alt="Person images">
+                        <h1>God Bless You</h1>
+                        <p>Thank You, for listening to all my nonsense talks.</p>
+                        <div class="social-links">
+                            <img src="Images/emoji.png" alt = " ">
+                            <img src="Images/Heart.png" alt = " ">
+                            <img src="Images/emoji.png" alt = " ">
+                            <img src="Images/Heart.png" alt = " ">
+
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <img src="Images/d5.jpg" alt="Person images">
+                        <h1>Hmeshaa Khush rahooo</h1>
+                        <p>All I know is I'll never find better than you.</p>
+                        <div class="social-links">
+                            <img src="Images/Heart.png" alt = " ">
+                            <img src="Images/emoji.png" alt = " ">
+                            <img src="Images/Heart.png" alt = " ">
+                            <img src="Images/emoji.png" alt = " ">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            var svgCircle = document.getElementById("svgCircle");
+            var step1 = document.getElementById("step1");
+            var step2 = document.getElementById("step2");
+            var step3 = document.getElementById("step3");
+            var step4 = document.getElementById("step4");
+            var step5 = document.getElementById("step5");
+            var main = document.getElementById("main");
+            var userBox = document.getElementById("userBox");
+
+
+            main.style.backgroundImage = "url(Images/doo5.avif)";
+
+            step1.addEventListener('click',()=>{
+                svgCircle.style.strokeDashoffset="1004"
+                main.style.backgroundImage = "url(Images/doo1.jpg)";
+                userBox.style.top = "-350px"
+
+            });
+            step2.addEventListener('click',()=>{
+                svgCircle.style.strokeDashoffset="753"
+                main.style.backgroundImage = "url(Images/doo2.jpeg)";              
+                userBox.style.top = "-800px"
+            });
+            step3.addEventListener('click',()=>{
+                svgCircle.style.strokeDashoffset="502"
+                main.style.backgroundImage = "url(Images/doo3.jpg)";
+                userBox.style.top = "-1250px"
+            });
+            step4.addEventListener('click',()=>{
+                svgCircle.style.strokeDashoffset="251"
+                main.style.backgroundImage = "url(Images/doo4.webp)";
+                userBox.style.top = "-1700px"
+            });
+            step5.addEventListener('click',()=>{
+                svgCircle.style.strokeDashoffset="0"
+                main.style.backgroundImage = "url(Images/doo5.avif)";
+                userBox.style.top = "100px"
+            });
+        </script>
+    </body>
+</html>
